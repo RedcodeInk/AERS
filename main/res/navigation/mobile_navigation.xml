@@ -5,21 +5,28 @@
     android:id="@+id/mobile_navigation"
     app:startDestination="@+id/navigation_home">
 
+    <!-- adds bottom tabs, label can be changed in string.xml -->
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.example.aers.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_Financial_Services"
+        android:name="com.example.aers_global.ui.finance.FinanceFragment"
+        android:label="@string/title_Financial_Services"
+        tools:layout="@layout/fragment_finance" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.aers.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_Inspection_Services"
+        android:name="com.example.aers_global.ui.inspection.InspectionFragment"
+        android:label="@string/title_Inspection"
+        tools:layout="@layout/fragment_inspection" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.aers.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_Food_Basics"
+        android:name="com.example.aers_global.ui.food_delivery.FoodDeliveryFragment"
+        android:label="@string/title_Food_Basics"
+        tools:layout="@layout/fragment_food_delivery" />
+
+    <fragment
+        android:id="@+id/navigation_Catering_and_Events"
+        android:name="com.example.aers_global.ui.catering.CateringFragment"
+        android:label="@string/title_Food_Basics"
+        tools:layout="@layout/fragment_catering" />
 </navigation>
